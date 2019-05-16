@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fin_Project</title>
 
-  <link rel='stylesheet' id='bootstrap-styles-css'  href='http://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/css/bootstrap.min.css?ver=3.3.4' type='text/css' media='all' />
-  <link rel='stylesheet' id='font-awesome-css'  href='http://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/css/font-awesome.min.css?ver=4.3.0' type='text/css' media='all' />
-  <link rel='stylesheet' id='ionicons-css'  href='http://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/css/ionicons.min.css?ver=4.2.0' type='text/css' media='all' />
-  <link rel='stylesheet' id='bootstrapwp-style-css'  href='http://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/style.css?ver=4.7.5' type='text/css' media='all' />
+
+  <link rel='stylesheet' id='bootstrap-styles-css'  href='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/css/bootstrap.min.css?ver=3.3.4' type='text/css' media='all' />
+  <link rel='stylesheet' id='font-awesome-css'  href='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/css/font-awesome.min.css?ver=4.3.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='ionicons-css'  href='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/css/ionicons.min.css?ver=4.2.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='bootstrapwp-style-css'  href='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/style.css?ver=4.7.5' type='text/css' media='all' />
 
 
   <!--slide part-->
-  <script type='text/javascript' src='http://gentsthemes.com/demo/landingsumowp20/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-  <script type='text/javascript' src='http://gentsthemes.com/demo/landingsumowp20/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-  <link rel="alternate" type="application/json+oembed" href="http://gentsthemes.com/demo/landingsumowp20/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgentsthemes.com%2Fdemo%2Flandingsumowp20%2F" />
-  <link rel="alternate" type="text/xml+oembed" href="http://gentsthemes.com/demo/landingsumowp20/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgentsthemes.com%2Fdemo%2Flandingsumowp20%2F&#038;format=xml" />
+  <script type='text/javascript' src='https://gentsthemes.com/demo/landingsumowp20/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+  <script type='text/javascript' src='https://gentsthemes.com/demo/landingsumowp20/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+  <link rel="alternate" type="application/json+oembed" href="https://gentsthemes.com/demo/landingsumowp20/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgentsthemes.com%2Fdemo%2Flandingsumowp20%2F" />
+  <link rel="alternate" type="text/xml+oembed" href="https://gentsthemes.com/demo/landingsumowp20/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgentsthemes.com%2Fdemo%2Flandingsumowp20%2F&#038;format=xml" />
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
   <!--slide part-->
 
   <style type="text/css">
@@ -32,19 +33,6 @@
 
   <div class="logo">Project_fin</div>
 
-  <!-- twitter,facebook,instagram-->
-  <div class="social hidden-xs">
-    <a href="http://twitter.com/gentsthemes" title="twitter" target="_blank">
-      <i class="ion-social-twitter"></i>
-    </a>
-    <a href="http://facebook.com" title="facebook" target="_blank">
-      <i class="ion-social-facebook"></i>
-    </a>
-    <a href="http://instagram.com" title="instagram" target="_blank">
-      <i class="ion-social-instagram"></i>
-    </a>
-  </div><!-- social-icons -->
-
 </div>
 
 <div class="home-wrap">
@@ -54,6 +42,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 centered">
+
+          <!--header 추가-->
+          <% include data/header.ejs  %>
+
           <h1>Search the company</h1>
 
           <div class="mtb">
@@ -62,12 +54,10 @@
               <!--  이메일 입력 활용가능
               <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>-->
 
-              <!--Search Input Line -->
-              <input type="search", placeholder="Search your Keywords">
-
+              <!--Search Input Line text type input, 실제 검색할 부분 -->
+              <input type="search", placeholder="Search your Keywords" type="text" id="searching">
               <!-- Search Button-->
-              <button id="search" class="btn btn-conf btn-green" type="submit">Search</button>
-
+              <a href="/data" class="btn btn-conf btn-green" type="submit">Search</a>
             </form>
           </div><!--/mt-->
 
@@ -89,54 +79,54 @@
         <p>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </p>
       </div>
       <!-- 이미지 추가?-->
-     <!--<img width="900" height="514" src="http://gentsthemes.com/demo/landingsumowp20/wp-content/uploads/sites/8/2015/03/phone.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://gentsthemes.com/demo/landingsumowp20/wp-content/uploads/sites/8/2015/03/phone.png 900w, http://gentsthemes.com/demo/landingsumowp20/wp-content/uploads/sites/8/2015/03/phone-300x171.png 300w" sizes="(max-width: 900px) 100vw, 900px" />	-->
-     </div>
+      <!--<img width="900" height="514" src="http://gentsthemes.com/demo/landingsumowp20/wp-content/uploads/sites/8/2015/03/phone.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://gentsthemes.com/demo/landingsumowp20/wp-content/uploads/sites/8/2015/03/phone.png 900w, http://gentsthemes.com/demo/landingsumowp20/wp-content/uploads/sites/8/2015/03/phone-300x171.png 300w" sizes="(max-width: 900px) 100vw, 900px" />	-->
+    </div>
+  </div><!--/row-->
+</div><!--/container-->
+
+
+<div id="sep">
+  <!-- 다음container 부분-->
+  <div class="container">
+    <div class="row centered">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </h2>
+        <h4>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </div>
+    </div>
+  </div>
+</div><!--/sep-->
+
+<!-- 디자인 활용가능 / 슬라이드 형태-->
+<div id="green">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 centered">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides 우선 3개 작성 -->
+
+          <div class="carousel-inner">
+            <div class="item">
+              <p>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </p>
+              <h5><tgr>Media_Fin1</tgr></h5>
+            </div>
+
+            <div class="item">
+              <p>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </p>
+              <h5><tgr>Media_Fin2</tgr></h5>
+            </div>
+
+            <div class="item">
+              <p>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </p>
+              <h5><tgr>Media_Fin3</tgr></h5>
+            </div>
+
+          </div>
+        </div><!--/Carousel-->
+
+      </div>
     </div><!--/row-->
   </div><!--/container-->
-
-
-  <div id="sep">
-    <!-- 다음container 부분-->
-    <div class="container">
-      <div class="row centered">
-        <div class="col-md-8 col-md-offset-2">
-          <h2>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </h2>
-          <h4>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </div>
-      </div>
-    </div>
-  </div><!--/sep-->
-
-  <!-- 디자인 활용가능 / 슬라이드 형태-->
-  <div id="green">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 centered">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Wrapper for slides 우선 3개 작성 -->
-
-            <div class="carousel-inner">
-              <div class="item">
-                <p>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </p>
-                <h5><tgr>Media_Fin1</tgr></h5>
-              </div>
-
-              <div class="item">
-                <p>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </p>
-                <h5><tgr>Media_Fin2</tgr></h5>
-              </div>
-
-              <div class="item">
-                <p>채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 채울부분 </p>
-                <h5><tgr>Media_Fin3</tgr></h5>
-              </div>
-
-            </div>
-          </div><!--/Carousel-->
-
-        </div>
-      </div><!--/row-->
-    </div><!--/container-->
-  </div><!--/green-->
+</div><!--/green-->
 </div>
 
 <!--컨택트라인 디자인-->
@@ -149,15 +139,12 @@
     </div><!--/row-->
   </div><!--/container-->
 </div><!--/F-->
-
-<script type='text/javascript' src='http://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/js/bootstrap.min.js?ver=3.3.4'></script>
-<script type='text/javascript' src='http://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/js/retina-1.1.0.js?ver=1.1.0'></script>
-<script type='text/javascript' src='http://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/js/ie10-viewport-bug-workaround.js?ver=3.3.4'></script>
-<script type='text/javascript' src='http://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/js/main.js?ver=3.3.4'></script>
-<script type='text/javascript' src='http://gentsthemes.com/demo/landingsumowp20/wp-includes/js/comment-reply.min.js?ver=4.7.5'></script>
-<script type='text/javascript' src='http://gentsthemes.com/demo/landingsumowp20/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
-
-
+<script type='text/javascript' src='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/js/bootstrap.min.js?ver=3.3.4'></script>
+<script type='text/javascript' src='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/js/retina-1.1.0.js?ver=1.1.0'></script>
+<script type='text/javascript' src='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/js/ie10-viewport-bug-workaround.js?ver=3.3.4'></script>
+<script type='text/javascript' src='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/js/main.js?ver=3.3.4'></script>
+<script type='text/javascript' src='https://gentsthemes.com/demo/landingsumowp20/wp-includes/js/comment-reply.min.js?ver=4.7.5'></script>
+<script type='text/javascript' src='https://gentsthemes.com/demo/landingsumowp20/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
 
 </body>
 </html>
