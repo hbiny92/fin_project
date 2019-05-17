@@ -11,6 +11,7 @@
   <link rel='stylesheet' id='ionicons-css'  href='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/css/ionicons.min.css?ver=4.2.0' type='text/css' media='all' />
   <link rel='stylesheet' id='bootstrapwp-style-css'  href='https://gentsthemes.com/demo/landingsumowp20/wp-content/themes/LandingSumoWP20/style.css?ver=4.7.5' type='text/css' media='all' />
 
+  <link rel="stylesheet" href="/styles/index.css" type="text/css">
 
   <!--slide part-->
   <script type='text/javascript' src='https://gentsthemes.com/demo/landingsumowp20/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
@@ -37,14 +38,16 @@
 
 <div class="home-wrap">
 
-
   <div id="h">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 centered">
 
-          <!--header 추가-->
-          <% include data/header.ejs  %>
+          <div class="menu-extra">
+            <a href="#">Home </a>
+
+            <a href="#"> About Us</a>
+            </div>
 
           <h1>Search the company</h1>
 
@@ -57,7 +60,7 @@
               <!--Search Input Line text type input, 실제 검색할 부분 -->
               <input type="search", placeholder="Search your Keywords" type="text" id="searching">
               <!-- Search Button-->
-              <a href="/data" class="btn btn-conf btn-green" type="submit">Search</a>
+              <a href="/layout" class="btn btn-conf btn-green" type="submit">Search</a>
             </form>
           </div><!--/mt-->
 

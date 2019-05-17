@@ -1,0 +1,243 @@
+html,body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background: whitesmoke ;
+}
+
+#sideMenu {
+    background: #302D43;
+    height: 100%;
+
+    /*side menu bar position absolute*/
+    position:absolute;
+    top:0px;
+    margin-bottom: -1500px;
+    padding-bottom: 1500px;
+}
+
+#sideMenu nav a{
+    display: block;
+    color:#F4F6F9;
+    text-decoration: none;
+    padding:25px 20px;
+    font-weight: 300;
+
+    /* animation*/
+    transition: all 0.3s ease-in-out;
+}
+
+/* animation*/
+#sideMenu nav a:hover{
+    background: purple;
+}
+
+#sideMenu nav a:hover.fa{
+    background: mediumpurple;
+}
+
+/*모든 a태그*/
+.fa{
+    color:black;
+    /*font 제어*/
+    font-size: 1.1rem;
+    margin-right: 0.9rem;
+    width: 25px;
+    position:relative;
+    top:2px;
+
+}
+
+/*active class line*/
+.active {
+    background: #302D43;
+    border-left: 5px solid mediumpurple;
+    padding:15px 30px 15px 25px;
+}
+
+#header{
+    /*header menu 위치제어*/
+    margin-left: 120px;
+    /*위 아래 */
+    padding:5px 25px;
+    background: white;
+
+}
+
+
+/*검색창 부분*/
+.search_in{
+    background: transparent;
+    border: none;
+    border-right: white;
+    font-size: 0.8rem;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.user-area{
+    display: inline-block;
+    margin-left: 1200px;
+    font-size: 1.5rem;
+    float:right;
+    padding: 0px;
+    background: #fff;
+}
+
+/*card 윗부분 */
+.content-area{
+    margin-left: 150px;
+    padding:5px;
+}
+
+.heading h1{
+    color:purple;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.heading p{
+    color:lightslategrey;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.cards{
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.card{
+    border-radius: 5px;
+    padding:5px;
+    background: white no-repeat 50% 50%;
+    width: 300px;
+    height: 300px;
+
+}
+
+.col-md-4{
+    display: inline-block;
+    width: 33%;
+    margin-top: 5px;
+    float:left;
+    padding: 0 45px;
+}
+
+.col-md-9{
+    display: inline-block;
+    width: 25%;
+    padding: 0px;
+}
+
+
+/*첫번쨰 카드부분*/
+.company-img{
+    background: url("http://g-ec2.images-amazon.com/images/G/01/social/api-share/amazon_logo_500500._V323939215_.png");
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.company-name{
+    font-size: 1.2rem;
+    color:black;
+    margin-left: 120px;
+    text-align: center;
+}
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-table100 {
+    width: 1260px;
+    margin-left: 8px;
+    padding: 30px 35px;
+}
+
+.wrap-table100 {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    display: table;
+}
+
+.row {
+    display: table-row;
+    background: #fff;
+}
+
+.row.header {
+    color: #ffffff;
+    background: mediumpurple;
+}
+
+.cell {
+    display: table-cell;
+}
+.row .cell {
+    font-size: 14px;
+    line-height: 1.2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.row.header .cell {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+/*table 순서대로 제어 */
+.row .cell:nth-child(1) {
+    width: 150px;
+    padding-left: 30px;
+}
+
+.row .cell:nth-child(2) {
+    width: 120px;
+}
+
+.row .cell:nth-child(3) {
+    width: 120px;
+}
+
+.row .cell:nth-child(4) {
+    width: 310px;
+}
+
+
+.row:hover {
+    background-color: #ececff;
+    cursor: pointer;
+}
+
+.description-part{
+    border-radius: 5px;
+    width: 1190px;
+    margin-top: 15px;
+    background: white;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 45px;
+
+}

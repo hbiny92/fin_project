@@ -8,6 +8,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
 //test
+const layout = require('./routes/layout');
 const data = require('./routes/data');
 const app = express();
 
@@ -25,11 +26,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
 //views test
 app.use('/data',data);
+app.use('/layout',layout);
 
-//button test
-app.post
+
+//css
+app.use("/styles",express.static(__dirname + "/styles"));
 
 
 // catch 404 and forward to error handler

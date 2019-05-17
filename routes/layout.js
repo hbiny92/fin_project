@@ -4,10 +4,10 @@ const express = require('express');
 const router = express.Router();
 
 
-/* GET data page. */
+/* GET layout page. */
 router.get('/', function(req, res, next) {
-    res.render('data',
-        { title: 'data' });
+    res.render('layout',
+        { title: 'layout' });
 
 });
 
