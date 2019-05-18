@@ -34,6 +34,10 @@ app.use('/layout',layout);
 
 //css
 app.use("/styles",express.static(__dirname + "/styles"));
+app.use("../vendors",express.static(__dirname + "/vendors"));
+app.use("/vendors",express.static(__dirname + "/vendors"));
+app.use("../build",express.static(__dirname + "/build"));
+app.use("/build",express.static(__dirname+ "/build"));
 
 
 // catch 404 and forward to error handler
